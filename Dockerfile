@@ -14,8 +14,7 @@ COPY . .
 # CMD ["flask", "run", "--host", "0.0.0.0"]
 CMD ["gunicorn", "--bind", "0.0.0.0:80", "app:create_app()"]
 
-'''
-Comando para rodar container
-1. docker run -dp 500:500 -w /app -v "$(pwd):/app" <image_name> sh -c "flask run --host 0.0.0.0"
-2. docker run -dp 5000:5000 -w /app -v "$(PWD):/app" --name <container_name> image_name
-'''
+
+# Comando para rodar container
+# 1. docker run -dp 500:500 -w /app -v "$(pwd):/app" <image_name> sh -c "flask run --host 0.0.0.0"
+# 2. docker run -dp 5000:5000 -w /app -v "$(PWD):/app" --name <container_name> image_name
